@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Products - Men Pattern</title>
+        <link rel="stylesheet" href="../styles/main.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="../js/products.js" type="module" defer></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav id="navbar">
+            <div class="container">
+                <a href="../index.html" class="logo">
+                    <img
+                        src="../images/logo.png"
+                        alt="Isnur"
+                        class="changeLogo"
+                    />
+                </a>
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="../index.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./products.html" class="nav-link">Продукции</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./about.html" class="nav-link">О нас</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./contacts.html" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="language">
+                    <span>Язык</span>
+                    <img src="../images/ru.png" alt="language" />
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="mobile-nav">
+                <a href="../index.html" class="logo">
+                    <img src="../images/logo.png" alt="Isnur" />
+                </a>
+                <div class="hamburger-btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation -->
+        <div class="container">
+            <div class="navigation-wrapper hidden">
+                <a href="../index.html" class="navigation">Главная</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="../pages/products.html" class="navigation"
+                    >Продукции</a
+                >
+                <i class="fa-solid fa-angle-right"></i>
+                <a class="navigation">Men pattern</a>
+            </div>
+        </div>
+        <!-- Product -->
+        <div class="single-product">
+            <div class="container hidden" data-single-product>
+                <div class="single-product-left">
+                    <div class="card-img">
+                        <img class="skeleton" data-img="main" id="productImg" />
+                    </div>
+                    <div class="alternative-images">
+                        <div class="alternative-image">
+                            <img data-img="1" class="skeleton" />
+                        </div>
+                        <div class="alternative-image">
+                            <img data-img="2" class="skeleton" />
+                        </div>
+                        <div class="alternative-image">
+                            <img data-img="3" class="skeleton" />
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product-right hidden">
+                    <h3
+                        id="productName"
+                        class="skeleton skeleton-text"
+                        data-title
+                    ></h3>
+                    <div>
+                        <span
+                            class="sale"
+                            id="productStatus"
+                            data-status
+                        ></span>
+                    </div>
+                    <p class="product-info" id="productDesc" data-text></p>
+                    <div class="single-product-colors">
+                        <div
+                            class="single-product-color"
+                            style="background-color: #dadada"
+                        ></div>
+                        <div
+                            class="single-product-color"
+                            style="background-color: #d5b795"
+                        ></div>
+                        <div
+                            class="single-product-color"
+                            style="background-color: #544fb5"
+                        ></div>
+                        <div
+                            class="single-product-color"
+                            style="background-color: #838383"
+                        ></div>
+                    </div>
+                    <button class="btn skeleton-btn"></button>
+                </div>
+            </div>
+        </div>
+        <!-- Similar Products -->
+        <div class="heading hidden">
+            <h2>Похожие продукты</h2>
+        </div>
+        <section id="products">
+            <div class="container">
+                <div class="cards hidden" data-list="allProducts">
+                    <div class="card">
+                        <div class="card-img">
+                            <img
+                                style="width: 300px; height: 300px"
+                                class="skeleton"
+                            />
+                            <button class="btn skeleton skeleton-btn"></button>
+                        </div>
+                        <div class="card-desc">
+                            <div
+                                class="card-text"
+                                style="flex-grow: 1; margin-right: 3rem"
+                            >
+                                <h3
+                                    class="skeleton skeleton-text"
+                                    data-title
+                                ></h3>
+                                <p class="skeleton skeleton-text" data-text></p>
+                            </div>
+                            <div class="card-colors">
+                                <div
+                                    class="card-color"
+                                    style="background-color: #e21818"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #898a25"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #222"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img
+                                style="width: 300px; height: 300px"
+                                class="skeleton"
+                            />
+                            <button class="btn skeleton skeleton-btn"></button>
+                        </div>
+                        <div class="card-desc">
+                            <div
+                                class="card-text"
+                                style="flex-grow: 1; margin-right: 3rem"
+                            >
+                                <h3
+                                    class="skeleton skeleton-text"
+                                    data-title
+                                ></h3>
+                                <p class="skeleton skeleton-text" data-text></p>
+                            </div>
+                            <div class="card-colors">
+                                <div
+                                    class="card-color"
+                                    style="background-color: #e21818"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #898a25"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #222"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img
+                                style="width: 300px; height: 300px"
+                                class="skeleton"
+                            />
+                            <button class="btn skeleton skeleton-btn"></button>
+                        </div>
+                        <div class="card-desc">
+                            <div
+                                class="card-text"
+                                style="flex-grow: 1; margin-right: 3rem"
+                            >
+                                <h3
+                                    class="skeleton skeleton-text"
+                                    data-title
+                                ></h3>
+                                <p class="skeleton skeleton-text" data-text></p>
+                            </div>
+                            <div class="card-colors">
+                                <div
+                                    class="card-color"
+                                    style="background-color: #e21818"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #898a25"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #222"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img
+                                style="width: 300px; height: 300px"
+                                class="skeleton"
+                            />
+                            <button class="btn skeleton skeleton-btn"></button>
+                        </div>
+                        <div class="card-desc">
+                            <div
+                                class="card-text"
+                                style="flex-grow: 1; margin-right: 3rem"
+                            >
+                                <h3
+                                    class="skeleton skeleton-text"
+                                    data-title
+                                ></h3>
+                                <p class="skeleton skeleton-text" data-text></p>
+                            </div>
+                            <div class="card-colors">
+                                <div
+                                    class="card-color"
+                                    style="background-color: #e21818"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #898a25"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #222"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img
+                                style="width: 300px; height: 300px"
+                                class="skeleton"
+                            />
+                            <button class="btn skeleton skeleton-btn"></button>
+                        </div>
+                        <div class="card-desc">
+                            <div
+                                class="card-text"
+                                style="flex-grow: 1; margin-right: 3rem"
+                            >
+                                <h3
+                                    class="skeleton skeleton-text"
+                                    data-title
+                                ></h3>
+                                <p class="skeleton skeleton-text" data-text></p>
+                            </div>
+                            <div class="card-colors">
+                                <div
+                                    class="card-color"
+                                    style="background-color: #e21818"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #898a25"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #222"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img
+                                style="width: 300px; height: 300px"
+                                class="skeleton"
+                            />
+                            <button class="btn skeleton skeleton-btn"></button>
+                        </div>
+                        <div class="card-desc">
+                            <div
+                                class="card-text"
+                                style="flex-grow: 1; margin-right: 3rem"
+                            >
+                                <h3
+                                    class="skeleton skeleton-text"
+                                    data-title
+                                ></h3>
+                                <p class="skeleton skeleton-text" data-text></p>
+                            </div>
+                            <div class="card-colors">
+                                <div
+                                    class="card-color"
+                                    style="background-color: #e21818"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #898a25"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #222"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img
+                                style="width: 300px; height: 300px"
+                                class="skeleton"
+                            />
+                            <button class="btn skeleton skeleton-btn"></button>
+                        </div>
+                        <div class="card-desc">
+                            <div
+                                class="card-text"
+                                style="flex-grow: 1; margin-right: 3rem"
+                            >
+                                <h3
+                                    class="skeleton skeleton-text"
+                                    data-title
+                                ></h3>
+                                <p class="skeleton skeleton-text" data-text></p>
+                            </div>
+                            <div class="card-colors">
+                                <div
+                                    class="card-color"
+                                    style="background-color: #e21818"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #898a25"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #222"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img
+                                style="width: 300px; height: 300px"
+                                class="skeleton"
+                            />
+                            <button class="btn skeleton skeleton-btn"></button>
+                        </div>
+                        <div class="card-desc">
+                            <div
+                                class="card-text"
+                                style="flex-grow: 1; margin-right: 3rem"
+                            >
+                                <h3
+                                    class="skeleton skeleton-text"
+                                    data-title
+                                ></h3>
+                                <p class="skeleton skeleton-text" data-text></p>
+                            </div>
+                            <div class="card-colors">
+                                <div
+                                    class="card-color"
+                                    style="background-color: #e21818"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #898a25"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #222"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img
+                                style="width: 300px; height: 300px"
+                                class="skeleton"
+                            />
+                            <button class="btn skeleton skeleton-btn"></button>
+                        </div>
+                        <div class="card-desc">
+                            <div
+                                class="card-text"
+                                style="flex-grow: 1; margin-right: 3rem"
+                            >
+                                <h3
+                                    class="skeleton skeleton-text"
+                                    data-title
+                                ></h3>
+                                <p class="skeleton skeleton-text" data-text></p>
+                            </div>
+                            <div class="card-colors">
+                                <div
+                                    class="card-color"
+                                    style="background-color: #e21818"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #898a25"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #222"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img
+                                style="width: 300px; height: 300px"
+                                class="skeleton"
+                            />
+                            <button class="btn skeleton skeleton-btn"></button>
+                        </div>
+                        <div class="card-desc">
+                            <div
+                                class="card-text"
+                                style="flex-grow: 1; margin-right: 3rem"
+                            >
+                                <h3
+                                    class="skeleton skeleton-text"
+                                    data-title
+                                ></h3>
+                                <p class="skeleton skeleton-text" data-text></p>
+                            </div>
+                            <div class="card-colors">
+                                <div
+                                    class="card-color"
+                                    style="background-color: #e21818"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #898a25"
+                                ></div>
+                                <div
+                                    class="card-color"
+                                    style="background-color: #222"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-full hidden">
+                    <a href="./products.html" class="btn">Все продукты</a>
+                </div>
+            </div>
+        </section>
+        <!-- Our Features -->
+        <section id="features">
+            <div class="container hidden">
+                <div class="feature">
+                    <img src="../images/guarantee.png" alt="guarantee" />
+                    <span>Гарантия</span>
+                    <p>Lorem Ipsum is simply dummy text</p>
+                </div>
+                <div class="feature">
+                    <img src="../images/high-quality.png" alt="high quality" />
+                    <span>Гарантия</span>
+                    <p>Lorem Ipsum is simply dummy text</p>
+                </div>
+                <div class="feature">
+                    <img src="../images/guarantee.png" alt="guarantee" />
+                    <span>Гарантия</span>
+                    <p>Lorem Ipsum is simply dummy text</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-item hidden">
+                    <h2>Наши продукты</h2>
+                    <a href="../pages/products.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Мужские</span>
+                    </a>
+                    <a href="../pages/products.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Женские</span>
+                    </a>
+                    <a href="../pages/products.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Детские</span>
+                    </a>
+                    <a href="../pages/products.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Все</span>
+                    </a>
+                </div>
+                <div class="footer-item hidden">
+                    <h2>Навигация</h2>
+                    <a href="../pages/about.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>О нас</span>
+                    </a>
+                    <a href="../pages/products.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Продукции</span>
+                    </a>
+                    <a href="../pages/contacts.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Контакты</span>
+                    </a>
+                </div>
+                <div class="footer-item hidden">
+                    <h2>О нас</h2>
+                    <a href="../pages/about.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Кто мы?</span>
+                    </a>
+                    <a href="../pages/about.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Когда мы начали наше производство?</span>
+                    </a>
+                    <a href="../pages/about.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Куда мы доставляем?</span>
+                    </a>
+                </div>
+                <div class="footer-item hidden">
+                    <h2>Контакты</h2>
+                    <div class="footer-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>info@isnur.com</span>
+                    </div>
+                    <div class="footer-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+998 (97) 150-12-12</span>
+                    </div>
+                    <div class="footer-info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Самарканд, Улица Узбекистанская 44 А</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>Все правы защишено © 2023</p>
+        </div>
+        <template data-template="productPageTemplate">
+            <div class="card">
+                <div class="card-img">
+                    <img src="../images/products/men-pattern.png" alt="sock" />
+                    <a href="men-pattern.html" class="btn">Подробнее</a>
+                </div>
+                <div class="card-desc">
+                    <div class="card-text">
+                        <h3 data-title>Men pattern</h3>
+                        <p class="limit-text-3" data-text>
+                            Lorem Ipsum is simply dummy text of the printing
+                        </p>
+                    </div>
+                    <div class="card-colors">
+                        <div
+                            class="card-color"
+                            style="background-color: #e21818"
+                        ></div>
+                        <div
+                            class="card-color"
+                            style="background-color: #898a25"
+                        ></div>
+                        <div
+                            class="card-color"
+                            style="background-color: #222"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <template data-template="singleProduct">
+            <div class="single-product-left">
+                <div class="card-img">
+                    <img data-img="main" id="productImg" />
+                </div>
+                <div class="alternative-images">
+                    <div class="alternative-image">
+                        <img data-img="1" />
+                    </div>
+                    <div class="alternative-image">
+                        <img data-img="2" />
+                    </div>
+                    <div class="alternative-image">
+                        <img data-img="3" />
+                    </div>
+                </div>
+            </div>
+            <div class="single-product-right hidden">
+                <h3 id="productName" data-title></h3>
+                <div>
+                    <span class="sale" id="productStatus" data-status></span>
+                </div>
+                <p class="product-info" id="productDesc" data-text></p>
+                <div class="single-product-colors">
+                    <div
+                        class="single-product-color"
+                        style="background-color: #dadada"
+                    ></div>
+                    <div
+                        class="single-product-color"
+                        style="background-color: #d5b795"
+                    ></div>
+                    <div
+                        class="single-product-color"
+                        style="background-color: #544fb5"
+                    ></div>
+                    <div
+                        class="single-product-color"
+                        style="background-color: #838383"
+                    ></div>
+                </div>
+                 <a href="whatsapp://send?phone=998913172626" target="_blank" class="btn">заказать</a>
+            </div>
+        </template>
+        <script>
+            ;(async () => {
+                const singleProduct = document.querySelector(
+                    "[data-single-product]"
+                )
+                const singleProductTemplate = document.querySelector(
+                    "[data-template='singleProduct']"
+                ).content.cloneNode(true)
+                // const product = await fetch("https://isnur-backend-production.up.railway.app/api/v1/product/")
+                const id = location.search.split("=").at(1)
+                const productResponse = await fetch(
+                    `https://isnur-backend-production.up.railway.app/api/v1/product/${id}`
+                )
+                const productJson = await productResponse.json()
+                const product = productJson.product
+                singleProduct.innerHTML = ''
+                singleProductTemplate.querySelector("[data-title]").textContent =
+                    product.nameRu
+                singleProductTemplate.querySelector("[data-text]").textContent =
+                    product.descriptionRu
+                singleProductTemplate.querySelector("[data-status]").textContent =
+                    product.onSale ? "в продаже" : "не в продаже"
+                singleProductTemplate.querySelector(
+                    "[data-img='main']"
+                ).src = `https://isnur-backend-production.up.railway.app/${product.imgOne}`
+                singleProductTemplate.querySelector(
+                    "[data-img='1']"
+                ).src = `https://isnur-backend-production.up.railway.app/${product.imgOne}`
+                singleProductTemplate.querySelector(
+                    "[data-img='2']"
+                ).src = `https://isnur-backend-production.up.railway.app/${product.imgTwo}`
+                singleProductTemplate.querySelector(
+                    "[data-img='3']"
+                ).src = `https://isnur-backend-production.up.railway.app/${product.imgThree}`
+                singleProduct.appendChild(singleProductTemplate);
+                const dataImgs = document.querySelectorAll("[data-img]");
+                dataImgs.forEach(img => {
+                    const mainImg = document.querySelector("[data-img='main']");
+                    img.addEventListener("click",()=>{
+                        mainImg.src = img.src;
+                    })
+                })
+                function updateLogoSrc() {
+                    const logo = document.querySelector(".changeLogo")
+                    const screenWidth = window.innerWidth
+
+                    if (screenWidth >= 768) {
+                        logo.src = "../images/logo.png"
+                    } else {
+                        logo.src = "../images/logo white.png"
+                    }
+                }
+
+                window.addEventListener("load", updateLogoSrc)
+                window.addEventListener("resize", updateLogoSrc)
+            })()
+        </script>
+    </body>
+</html>
