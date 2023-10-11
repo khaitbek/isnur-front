@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Paypoqlarimiz barcha uchun mo'ljallangan"
+        />
+        <title>Isnur - Mahsulotlarimiz</title>
+        <script type="module" src="../main.js" defer></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav id="navbar">
+            <div class="container">
+                <a href="../index-uz.html" class="logo">
+                    <img
+                        src="/images/logo.png"
+                        alt="Isnur"
+                        class="changeLogo"
+                    />
+                </a>
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="../index-uz.html" class="nav-link"
+                            >Bosh sahifa</a
+                        >
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="nav-link">Mahsulotlarimiz</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="../pages/about-uz.html" class="nav-link"
+                            >Biz haqimizda</a
+                        >
+                    </li>
+                    <li class="list-item">
+                        <a href="../pages/contact-uz.html" class="nav-link"
+                            >Bog'lanish</a
+                        >
+                    </li>
+                </ul>
+                <a href="products.html" class="language">
+                    <span>Til</span>
+                    <img src="/images/uz.png" alt="language" />
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="mobile-nav">
+                <a href="../index-uz.html" class="logo">
+                    <img src="/images/logo.png" alt="Isnur" />
+                </a>
+                <div class="hamburger-btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation -->
+        <div class="container">
+            <div class="navigation-wrapper hidden">
+                <a href="../index-uz.html" class="navigation">Bosh sahifa</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="#" class="navigation">Mahsulotlarimiz</a>
+            </div>
+        </div>
+        <!-- Products -->
+        <div class="products">
+            <div class="heading hidden">
+                <h2>Bizning mahsulotlarimiz</h2>
+            </div>
+            <div class="container">
+                <div class="products-filter">
+                    <div class="dropdown-filter hidden">
+                        <div class="filter-heading colors active">
+                            <span>Rang</span>
+                            <i class="fa-solid fa-angle-down angle-color"></i>
+                        </div>
+                        <div class="filter-wrapper color1">
+                            <div class="color-filter">
+                                <div
+                                    class="color"
+                                    style="background: #222"
+                                ></div>
+                                <span>Qora</span>
+                            </div>
+                            <div class="color-filter">
+                                <div
+                                    class="color"
+                                    style="background: #bb0c0c"
+                                ></div>
+                                <span>Qizil</span>
+                            </div>
+                            <div class="color-filter">
+                                <div
+                                    class="color"
+                                    style="background: #0c33bb"
+                                ></div>
+                                <span>Ko'k</span>
+                            </div>
+                            <div class="color-filter">
+                                <div
+                                    class="color"
+                                    style="background: #0cbb28"
+                                ></div>
+                                <span>Yashil</span>
+                            </div>
+                            <div class="color-filter">
+                                <div
+                                    class="color"
+                                    style="background: #ff4747"
+                                ></div>
+                                <span>Lasos rang</span>
+                            </div>
+                            <div class="color-filter">
+                                <div
+                                    class="color"
+                                    style="background: #fff847"
+                                ></div>
+                                <span>Sariq</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-filter hidden">
+                        <div class="filter-heading sex active">
+                            <span>JINS</span>
+                            <i class="fa-solid fa-angle-down angle-sex"></i>
+                        </div>
+                        <div class="filter-wrapper color2" data-list="category">
+                            <div
+                                class="color-filter type-filter"
+                                data-category="MALE"
+                            >
+                                Erkaklar uchun
+                            </div>
+                            <div
+                                class="color-filter type-filter"
+                                data-category="FEMALE"
+                            >
+                                Ayollar uchun
+                            </div>
+                            <div
+                                class="color-filter type-filter"
+                                data-category="KIDS"
+                            >
+                                Bolalar uchun
+                            </div>
+                            <div
+                                class="color-filter type-filter"
+                                data-category="TIGHTS"
+                            >
+                                Kolgotkalar
+                            </div>
+                            <div
+                                class="color-filter type-filter"
+                                data-category="all"
+                            >
+                                Hammasi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="products">
+                    <div class="cards hidden" data-list="allProducts">
+                        <div class="card">
+                            <div class="card-img">
+                                <img
+                                    style="width: 300px; height: 300px"
+                                    class="skeleton"
+                                />
+                                <button
+                                    class="btn skeleton skeleton-btn"
+                                ></button>
+                            </div>
+                            <div class="card-desc">
+                                <div
+                                    class="card-text"
+                                    style="flex-grow: 1; margin-right: 3rem"
+                                >
+                                    <h3
+                                        class="skeleton skeleton-text"
+                                        data-title
+                                    ></h3>
+                                    <p
+                                        class="skeleton skeleton-text"
+                                        data-text
+                                    ></p>
+                                </div>
+                                <div class="card-colors">
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #e21818"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #898a25"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #222"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img
+                                    style="width: 300px; height: 300px"
+                                    class="skeleton"
+                                />
+                                <button
+                                    class="btn skeleton skeleton-btn"
+                                ></button>
+                            </div>
+                            <div class="card-desc">
+                                <div
+                                    class="card-text"
+                                    style="flex-grow: 1; margin-right: 3rem"
+                                >
+                                    <h3
+                                        class="skeleton skeleton-text"
+                                        data-title
+                                    ></h3>
+                                    <p
+                                        class="skeleton skeleton-text"
+                                        data-text
+                                    ></p>
+                                </div>
+                                <div class="card-colors">
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #e21818"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #898a25"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #222"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img
+                                    style="width: 300px; height: 300px"
+                                    class="skeleton"
+                                />
+                                <button
+                                    class="btn skeleton skeleton-btn"
+                                ></button>
+                            </div>
+                            <div class="card-desc">
+                                <div
+                                    class="card-text"
+                                    style="flex-grow: 1; margin-right: 3rem"
+                                >
+                                    <h3
+                                        class="skeleton skeleton-text"
+                                        data-title
+                                    ></h3>
+                                    <p
+                                        class="skeleton skeleton-text"
+                                        data-text
+                                    ></p>
+                                </div>
+                                <div class="card-colors">
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #e21818"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #898a25"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #222"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img
+                                    style="width: 300px; height: 300px"
+                                    class="skeleton"
+                                />
+                                <button
+                                    class="btn skeleton skeleton-btn"
+                                ></button>
+                            </div>
+                            <div class="card-desc">
+                                <div
+                                    class="card-text"
+                                    style="flex-grow: 1; margin-right: 3rem"
+                                >
+                                    <h3
+                                        class="skeleton skeleton-text"
+                                        data-title
+                                    ></h3>
+                                    <p
+                                        class="skeleton skeleton-text"
+                                        data-text
+                                    ></p>
+                                </div>
+                                <div class="card-colors">
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #e21818"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #898a25"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #222"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img
+                                    style="width: 300px; height: 300px"
+                                    class="skeleton"
+                                />
+                                <button
+                                    class="btn skeleton skeleton-btn"
+                                ></button>
+                            </div>
+                            <div class="card-desc">
+                                <div
+                                    class="card-text"
+                                    style="flex-grow: 1; margin-right: 3rem"
+                                >
+                                    <h3
+                                        class="skeleton skeleton-text"
+                                        data-title
+                                    ></h3>
+                                    <p
+                                        class="skeleton skeleton-text"
+                                        data-text
+                                    ></p>
+                                </div>
+                                <div class="card-colors">
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #e21818"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #898a25"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #222"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img
+                                    style="width: 300px; height: 300px"
+                                    class="skeleton"
+                                />
+                                <button
+                                    class="btn skeleton skeleton-btn"
+                                ></button>
+                            </div>
+                            <div class="card-desc">
+                                <div
+                                    class="card-text"
+                                    style="flex-grow: 1; margin-right: 3rem"
+                                >
+                                    <h3
+                                        class="skeleton skeleton-text"
+                                        data-title
+                                    ></h3>
+                                    <p
+                                        class="skeleton skeleton-text"
+                                        data-text
+                                    ></p>
+                                </div>
+                                <div class="card-colors">
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #e21818"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #898a25"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #222"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img
+                                    style="width: 300px; height: 300px"
+                                    class="skeleton"
+                                />
+                                <button
+                                    class="btn skeleton skeleton-btn"
+                                ></button>
+                            </div>
+                            <div class="card-desc">
+                                <div
+                                    class="card-text"
+                                    style="flex-grow: 1; margin-right: 3rem"
+                                >
+                                    <h3
+                                        class="skeleton skeleton-text"
+                                        data-title
+                                    ></h3>
+                                    <p
+                                        class="skeleton skeleton-text"
+                                        data-text
+                                    ></p>
+                                </div>
+                                <div class="card-colors">
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #e21818"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #898a25"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #222"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img
+                                    style="width: 300px; height: 300px"
+                                    class="skeleton"
+                                />
+                                <button
+                                    class="btn skeleton skeleton-btn"
+                                ></button>
+                            </div>
+                            <div class="card-desc">
+                                <div
+                                    class="card-text"
+                                    style="flex-grow: 1; margin-right: 3rem"
+                                >
+                                    <h3
+                                        class="skeleton skeleton-text"
+                                        data-title
+                                    ></h3>
+                                    <p
+                                        class="skeleton skeleton-text"
+                                        data-text
+                                    ></p>
+                                </div>
+                                <div class="card-colors">
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #e21818"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #898a25"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #222"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img
+                                    style="width: 300px; height: 300px"
+                                    class="skeleton"
+                                />
+                                <button
+                                    class="btn skeleton skeleton-btn"
+                                ></button>
+                            </div>
+                            <div class="card-desc">
+                                <div
+                                    class="card-text"
+                                    style="flex-grow: 1; margin-right: 3rem"
+                                >
+                                    <h3
+                                        class="skeleton skeleton-text"
+                                        data-title
+                                    ></h3>
+                                    <p
+                                        class="skeleton skeleton-text"
+                                        data-text
+                                    ></p>
+                                </div>
+                                <div class="card-colors">
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #e21818"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #898a25"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #222"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img
+                                    style="width: 300px; height: 300px"
+                                    class="skeleton"
+                                />
+                                <button
+                                    class="btn skeleton skeleton-btn"
+                                ></button>
+                            </div>
+                            <div class="card-desc">
+                                <div
+                                    class="card-text"
+                                    style="flex-grow: 1; margin-right: 3rem"
+                                >
+                                    <h3
+                                        class="skeleton skeleton-text"
+                                        data-title
+                                    ></h3>
+                                    <p
+                                        class="skeleton skeleton-text"
+                                        data-text
+                                    ></p>
+                                </div>
+                                <div class="card-colors">
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #e21818"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #898a25"
+                                    ></div>
+                                    <div
+                                        class="card-color"
+                                        style="background-color: #222"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Features -->
+        <section id="features">
+            <div class="container hidden">
+                <div class="feature">
+                    <img src="/images/technology.png" alt="guarantee" />
+                    <span>Zamonvaiy texnologiyalar</span>
+                    <p>
+                        Fabrikamiz yuqori sifat standartlariga javob beradigan
+                        zamonaviy Yevropa va Osiyo uskunalari bilan jihozlangan.
+                    </p>
+                </div>
+                <div class="feature">
+                    <img src="/images/high-quality.png" alt="high quality" />
+                    <span>Sifat nazorati</span>
+                    <p>
+                        Mahsulotlarimiz 3 bosqichli sifat nazoratidan
+                        o'tkaziladi
+                    </p>
+                </div>
+                <div class="feature">
+                    <img src="/images/colour.png" alt="guarantee" />
+                    <span>O'n mingdan ortiq turdagi mahsulotlar</span>
+                    <p>
+                        Biz iste'molchilarga keng turdagi mahsulot
+                        assortimentimizni taklif etamiz
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-item hidden">
+                    <h2>Bizning mahsulotlar</h2>
+                    <a href="../pages/products-uz.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Erkaklar uchun</span>
+                    </a>
+                    <a href="../pages/products-uz.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Ayollar uchun</span>
+                    </a>
+                    <a href="../pages/products-uz.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Bolalar uchun</span>
+                    </a>
+                    <a href="../pages/products-uz.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Hammasi</span>
+                    </a>
+                </div>
+                <div class="footer-item hidden">
+                    <h2>Navigatsiya</h2>
+                    <a href="../pages/about-uz.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Biz haqimizda</span>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Mahsulotlarimiz</span>
+                    </a>
+                    <a href="../pages/contact-uz.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Bog'lanish</span>
+                    </a>
+                </div>
+                <div class="footer-item hidden">
+                    <h2>Biz haqimizda</h2>
+                    <a href="../pages/about-uz.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Biz kimmiz?</span>
+                    </a>
+                    <a href="../pages/about-uz.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Ishlab chiqarishni qachon boshlaganmiz?</span>
+                    </a>
+                    <a href="../pages/about-uz.html" class="footer-link">
+                        <span class="dash"></span>
+                        <span>Qayerlarga yetkazamiz?</span>
+                    </a>
+                </div>
+                <div class="footer-item hidden">
+                    <h2>Bog'lanish</h2>
+                    <div class="footer-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>isnur.uz@gmail.com</span>
+                    </div>
+                    <div class="footer-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+998 (90) 194-96-00</span>
+                    </div>
+                    <div class="footer-info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span
+                            >Urgut tuman, Bog'ishamol MFY, Qoratepa
+                            ko'chasi</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>Barcha huquqlar himoyalangan © 2023</p>
+        </div>
+        <template data-template="productPageTemplate">
+            <div class="card">
+                <div class="card-img">
+                    <img
+                        src="/images/products/men-pattern.png"
+                        width="300"
+                        height="300"
+                        alt="sock"
+                    />
+                    <a href="men-pattern.html" class="btn">Batafsil</a>
+                </div>
+                <div class="card-desc">
+                    <div class="card-text">
+                        <h3 data-title>Men pattern</h3>
+                        <p class="limit-text-3" data-text>
+                            Lorem Ipsum is simply dummy text of the printing
+                        </p>
+                    </div>
+                    <div class="card-colors">
+                        <div
+                            class="card-color"
+                            style="background-color: #e21818"
+                        ></div>
+                        <div
+                            class="card-color"
+                            style="background-color: #898a25"
+                        ></div>
+                        <div
+                            class="card-color"
+                            style="background-color: #222"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <script src="../js/products.js" type="module"></script>
+        <script src="../js/app.js" type="module"></script>
+        <!-- <script src="../js/about-filter.js"></script> -->
+        <script>
+            function updateLogoSrc() {
+                const logo = document.querySelector(".changeLogo")
+                const screenWidth = window.innerWidth
+
+                if (screenWidth >= 768) {
+                    logo.src = "/images/logo.png"
+                } else {
+                    logo.src = "/images/logo white.png"
+                }
+            }
+
+            window.addEventListener("load", updateLogoSrc)
+            window.addEventListener("resize", updateLogoSrc)
+        </script>
+    </body>
+</html>
